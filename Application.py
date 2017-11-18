@@ -12,7 +12,7 @@ from MountDialog import MountDialog
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GLib
 import subprocess
-from Constants import APP_NAME, WINDOW_BORDER, WIDGET_SPACING, LABEL_SIZE, GOCRYPTFS_CMD
+from Constants import APP_NAME, WINDOW_BORDER, WIDGET_SPACING, LABEL_SIZE, GOCRYPTFS_CMD, ICON
 from Config import Config
 
 
@@ -23,7 +23,7 @@ class Window(Gtk.Window):
 
     def __init__(self):
         Gtk.Window.__init__(self, title=APP_NAME)
-        self.set_icon(Gtk.IconTheme.get_default().load_icon(Gtk.STOCK_OPEN, 128, 0))
+        self.set_icon_from_file(ICON)
         self.set_border_width(WINDOW_BORDER)
         self.set_resizable(False)
         self.connect("delete_event", Gtk.main_quit)
