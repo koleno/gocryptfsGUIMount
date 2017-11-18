@@ -7,4 +7,4 @@ WIDGET_SPACING = 5
 WINDOW_BORDER = 10
 GOCRYPTFS_CMD = "gocryptfs"
 CONFIG_FILE = ".gocryptfsguimount"
-ICON = os.path.join(ROOT_DIR, "icon.svg")
+ICON = os.path.join(ROOT_DIR, "icon.png")
