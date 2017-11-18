@@ -1,5 +1,10 @@
-import threading
+"""
+    Simple GUI for mounting gocrypfts folders written in Python3 and GTK.
+    Author: Dusan Koleno
+    Licence: GNU General Public License v2.0
+"""
 
+import threading
 import gi
 
 from MountDialog import MountDialog
@@ -114,9 +119,9 @@ class Window(Gtk.Window):
 
     def mount(self):
         cmd = subprocess.run((GOCRYPTFS_CMD, self.cipher_folder, self.mount_folder), stdout=subprocess.PIPE,
-                              input=self.pass_entry.get_text().encode("ascii"))
+                             input=self.pass_entry.get_text().encode("ascii"))
 
-        GLib.idle_add(self.mount_dialog.destroy) # dismiss mount dialog
+        GLib.idle_add(self.mount_dialog.destroy)  # dismiss mount dialog
 
         if cmd.returncode > 0:
             GLib.idle_add(self.show_dialog, "Cannot mount! Check your folders and password.")
