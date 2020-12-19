@@ -6,14 +6,13 @@
 
 import threading
 import gi
-
 from MountDialog import MountDialog
-
-gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GLib
 import subprocess
 from Constants import APP_NAME, WINDOW_BORDER, WIDGET_SPACING, LABEL_SIZE, GOCRYPTFS_CMD, ICON
 from Config import Config
+
+gi.require_version("Gtk", "3.0")
 
 
 class Window(Gtk.Window):
@@ -80,6 +79,8 @@ class Window(Gtk.Window):
         self.add(main_box)
         self.show_all()
 
+        self.pass_entry.grab_focus()  # set focus to password entry
+
     def show_chooser_dialog(self, widget):
         chooser = Gtk.FileChooserDialog("Choose Folder", self, Gtk.FileChooserAction.SELECT_FOLDER,
                                         (Gtk.STOCK_OPEN, Gtk.ResponseType.OK,
@@ -134,10 +135,7 @@ class Window(Gtk.Window):
         dialog.run()
         dialog.destroy()
 
-    def main(self):
-        Gtk.main()
-
 
 if __name__ == "__main__":
     window = Window()
-    window.main()
+    Gtk.main()
