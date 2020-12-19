@@ -15,7 +15,7 @@
    viewBox="0 0 128 127.99999"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="icon.svg">
   <defs
      id="defs4">
@@ -36,7 +36,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="0.45725213"
+     inkscape:cx="-87.931095"
      inkscape:cy="42.913987"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -46,9 +46,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
-     inkscape:window-height="971"
+     inkscape:window-height="1015"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,18 +72,21 @@
        id="path4136"
        cx="182.82846"
        cy="516.99048"
-       r="62.020672" />
+       r="62.020672"
+       inkscape:export-xdpi="45.000004"
+       inkscape:export-ydpi="45.000004" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:106.5357132px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="143.42651"
-       y="555.04266"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="136.63063"
+       y="555.77094"
        id="text5614"
-       sodipodi:linespacing="125%"><tspan
+       inkscape:export-xdpi="45.000004"
+       inkscape:export-ydpi="45.000004"><tspan
          sodipodi:role="line"
          id="tspan5616"
-         x="143.42651"
-         y="555.04266"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold'">G</tspan></text>
+         x="136.63063"
+         y="555.77094"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:106.5357132px;line-height:1.25;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans Bold'">G</tspan></text>
   </g>
 </svg>
