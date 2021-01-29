@@ -33,7 +33,7 @@ class Window(Gtk.Window):
 
         button_box = Gtk.HBox(False, 0)
         ok_button = Gtk.Button("Mount")
-        ok_button.connect("clicked", self.ok_clicked)
+        ok_button.connect("clicked", self.mount_clicked)
         cancel_button = Gtk.Button("Close")
         cancel_button.connect("clicked", Gtk.main_quit)
         button_box.pack_start(ok_button, expand=True, fill=True, padding=WIDGET_SPACING)
@@ -67,6 +67,7 @@ class Window(Gtk.Window):
         pass_label.set_width_chars(LABEL_SIZE)
         self.pass_entry = Gtk.Entry()
         self.pass_entry.set_visibility(False)
+        self.pass_entry.connect("activate", self.mount_clicked)  # enter pressed in pass_entry
         pass_box.pack_start(pass_label, expand=False, fill=False, padding=WIDGET_SPACING)
         pass_box.pack_end(self.pass_entry, expand=True, fill=True, padding=WIDGET_SPACING)
 
@@ -96,7 +97,7 @@ class Window(Gtk.Window):
 
         chooser.destroy()
 
-    def ok_clicked(self, widget, data=None):
+    def mount_clicked(self, widget, data=None):
         if len(self.cipher_folder) == 0 or len(self.mount_folder) == 0:
             self.show_dialog("Select both folders")
             return
